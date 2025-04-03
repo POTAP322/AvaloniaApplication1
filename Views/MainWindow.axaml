@@ -9,10 +9,10 @@
         x:DataType="vm:MainWindowViewModel"> 
 
     <StackPanel Margin="10" Spacing="10">
-        <!-- Поле ввода -->
+        <!-- поле ввода -->
         <TextBox Text="{Binding InputText}" Watermark="Введите число"/>
 
-        <!-- Кнопки -->
+        <!-- кнопки -->
         <StackPanel Orientation="Horizontal" Spacing="5">
             <Button Content="Добавить" Command="{Binding AddElement}"/>
             <Button Content="Удалить" Command="{Binding RemoveElement}"/>
@@ -20,10 +20,10 @@
             <Button Content="Очистить" Command="{Binding ClearSet}"/>
         </StackPanel>
 
-        <!-- Вывод результата -->
+        <!-- вывод результата -->
         <TextBlock Text="{Binding OutputText}" TextWrapping="Wrap"/>
 
-        <!-- Список элементов -->
+        <!-- список элементов -->
         <TextBlock Text="Элементы множества:" FontWeight="Bold"/>
         <ListBox ItemsSource="{Binding SetItems}" Height="150"/> 
     </StackPanel>

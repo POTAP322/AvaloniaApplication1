@@ -17,7 +17,7 @@ namespace AvaloniaApplication1.Models
             _setList = new List<T>();
             
         }
-        //Конструктор с начальными значениями
+        //конструктор с начальными значениями
         public MySet(IEnumerable<T> collection)
         {
             if (collection == null){

@@ -27,7 +27,7 @@ namespace AvaloniaApplication1.ViewModels
             set => this.RaiseAndSetIfChanged(ref _outputText, value);
         }
 
-        // Команды для кнопок
+        //код для кнопок
         public void AddElement()
         {
             if (int.TryParse(InputText, out int number))
@@ -76,7 +76,7 @@ namespace AvaloniaApplication1.ViewModels
             OutputText = "Множество очищено";
         }
 
-        // Обновляет список элементов для отображения
+        //обновляет список элементов для отображения
         private void UpdateSetItems()
         {
             SetItems.Clear();
